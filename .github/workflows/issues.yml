@@ -1,0 +1,9 @@
+name: Hanlde issues
+on: issues:
+  types: [opened, edited, milestoned]
+jobs:
+  output-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo details
+        run: echo '${{ toJSON(github.event) }}'
