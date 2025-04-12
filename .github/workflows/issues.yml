@@ -1,6 +1,5 @@
 name: Hanlde issues
 on: issues:
-  types: [opened, edited, milestoned]
 jobs:
   output-info:
     runs-on: ubuntu-latest
